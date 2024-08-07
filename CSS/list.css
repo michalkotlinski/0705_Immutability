@@ -53,3 +53,12 @@
 .list__item--hidden {
     display: none;
 }
+
+@media (max-width: 600px) {
+    .list__item {
+        margin-left: 5px;
+        /* Mniejszy margines z lewej strony */
+        margin-right: 5px;
+        /* Mniejszy margines z prawej strony */
+    }
+}
