@@ -3,11 +3,11 @@
 
     let tasks = [
         {
-            content: "co ja muszę zrobić ???",
+            content: "wyprowadzić psa",
             done: false
         },
         {
-            content: "a już nie ważne ;D",
+            content: "zdać egzamin",
             done: true,
         },
     ];
