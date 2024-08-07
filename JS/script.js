@@ -14,7 +14,7 @@
     let hideDone = false;
 
     const setAllTasksDone = () => {
-        tasks = stask.map(task => ({
+        tasks = tasks.map(task => ({
             ...task,
             done: true,
         }));
