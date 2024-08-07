@@ -1,4 +1,5 @@
 {
+    const welcome = () => console.log("Hello there!");
     let tasks = [
         {
             content: "wyprowadzić psa",
