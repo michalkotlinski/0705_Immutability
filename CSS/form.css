@@ -1,38 +1,33 @@
 .form {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-gap: 20px;
+}
+
+@media(max-width:992px) {
+    .form {
+        grid-template-columns: 1fr;
+    }
 }
 
 .form__input {
-    flex-grow: 1;
-    height: 35px;
+    border: 2px solid #eee;
     padding: 10px;
-    font-size: 14px;
-    border-color: #f0efef;
-    border-style: solid;
-}
-
-.form__input:focus {
-    outline: none;
-    border-color: #008080;
 }
 
 .form__button {
-    color: #ffffff;
-    background-color: #008080;
+    background-color: teal;
+    color: white;
+    padding: 10px;
     border: none;
-    height: 35px;
+    transition: background 0.3s, transform 0.6s;
 }
 
-@media (max-width: 767px){
-    .form__input {
-        width: 100%;
-    }
+.form__button:hover {
+    background-color: hsl(180, 99%, 35%);
+    transform: scale(1.03);
+}
 
-    .form__button {
-        width: 100%;
-    }
+.form__button:active {
+    background-color: hsl(180, 91%, 86%);
 }

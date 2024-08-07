@@ -1,56 +1,30 @@
 .section {
-    max-width: 800px;
-    margin: auto;
-    background-color: #fff;
+    background-color: white;
+    margin-bottom: 10px;
 }
 
 .section__header {
-    font-weight: 700;
-    padding: 10px;
-    border-bottom: 2px solid #cccccc;
+    border-bottom: 2px solid #ddd;
+    padding: 5px;
+    padding-left: 25px;
 }
 
-.section__list {
-    list-style: none;
-    margin: 0;
-    padding: 20px;
-}
-
-.section__listItem {
+.section__header--withButtons {
     display: grid;
-    grid-template-columns: auto 1fr auto;
-    grid-gap: 10px;
+    grid-template-columns: 1fr auto;
     align-items: center;
-    padding: 10px 0;
-    border-bottom: 1px solid #ddd;
 }
 
-.section__listItemText {
-    word-break: break-word;
+@media(max-width:992px) {
+    .section__header--withButtons {
+        grid-template-columns: 1fr;
+    }
 }
 
-.section__listItemText--done {
-    text-decoration: line-through;
+.section__body {
+    padding: 25px;
 }
 
-.section__button {
-    border: none;
-    background-color: #ffffff;
-    font-size: 22px;
-    width: 30px;
-    height: 30px;
-}
-
-.section__button--done {
-    color: #ffffff;
-    background-color: forestgreen;
-}
-
-.done {
-    background-color: yellow;
-}
-
-.section__button--remove {
-    color: #ffffff;
-    background-color: red;
+.section__body--withList {
+    padding-left: 0;
 }
