@@ -102,12 +102,8 @@
             buttonsContainer.innerHTML = ""
         } else {
             buttonsContainer.innerHTML =
-                `<button class="js-toggleHideDone buttonsArea__button">
-                ${hideDone ? "Pokaż" : "Ukryj"} ukończone
-            </button>
-            <button ${tasks.every(({ done }) => done) ? "disabled" : ""} class="js-setAllDone buttonsArea__button">
-                Ukończ wszystkie
-            </button>`
+                `<button class="js-toggleHideDone buttonsArea__button">${hideDone ? "Pokaż" : "Ukryj"} ukończone</button>
+            <button ${tasks.every(({ done }) => done) ? "disabled" : ""} class="js-setAllDone buttonsArea__button">Ukończ wszystkie</button>`
             listenHideDoneButtonEvent();
             listenSetAllDoneButtonEvent();
         };
