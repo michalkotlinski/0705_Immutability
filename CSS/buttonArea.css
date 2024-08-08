@@ -8,7 +8,6 @@
   color: hsl(180, 53%, 32%);
   border: none;
   background: none;
-  /* Usunięcie tła w stanie normalnym */
   margin-right: 10px;
   transition: color 0.4s;
   padding: 10px;
@@ -27,19 +26,16 @@
   cursor: pointer;
   color: hsl(238, 65%, 23%);
   background: none;
-  /* Usunięcie tła przy najechaniu */
   transform: scale(1.1);
 }
 
 .buttonsArea__button:active {
   color: hsl(233, 91%, 9%);
   background: none;
-  /* Usunięcie tła przy kliknięciu */
   transform: scale(1.1);
 }
 
 .buttonsArea__button:disabled {
   color: #bbb;
   background: none;
-  /* Usunięcie tła gdy przycisk jest wyłączony */
 }
