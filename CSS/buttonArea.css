@@ -25,14 +25,14 @@
 .buttonsArea__button:hover {
   cursor: pointer;
   color: hsl(238, 65%, 23%);
-  background-color: hsl(238, 65%, 80%);
-  transform: scale(1.1);
+  background: none;
+  transition: color 0.4s;
 }
 
 .buttonsArea__button:active {
   color: hsl(233, 91%, 9%);
-  background-color: hsl(233, 91%, 70%);
-  transform: scale(1.1);
+  background: none;
+  transition: color 0.4s;
 }
 
 .buttonsArea__button:disabled {
