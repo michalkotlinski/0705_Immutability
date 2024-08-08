@@ -7,9 +7,10 @@
   display: inline-block;
   color: hsl(180, 53%, 32%);
   border: none;
-  /*background: hsl(180, 53%, 90%);*/
+  background: none;
+  /* Usunięcie tła w stanie normalnym */
   margin-right: 10px;
-  transition: color 0.4s, background 0.3s, transform 0.6s;
+  transition: color 0.4s;
   padding: 10px;
   box-sizing: content-box;
 }
@@ -25,17 +26,20 @@
 .buttonsArea__button:hover {
   cursor: pointer;
   color: hsl(238, 65%, 23%);
-  background-color: hsl(238, 65%, 80%);
+  background: none;
+  /* Usunięcie tła przy najechaniu */
   transform: scale(1.1);
 }
 
 .buttonsArea__button:active {
   color: hsl(233, 91%, 9%);
-  background-color: hsl(233, 91%, 70%);
+  background: none;
+  /* Usunięcie tła przy kliknięciu */
   transform: scale(1.1);
 }
 
 .buttonsArea__button:disabled {
   color: #bbb;
-  background-color: hsl(0, 0%, 90%);
+  background: none;
+  /* Usunięcie tła gdy przycisk jest wyłączony */
 }
